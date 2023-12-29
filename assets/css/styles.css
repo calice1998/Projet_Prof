@@ -1,0 +1,362 @@
+/********************* NAV ********************************************/
+
+nav {
+    background-color: var(--main-color-black);
+    color: var(--main-color-white);
+    width: var(--height-unit);
+    height: 100vh;
+}
+
+nav:hover {
+    width: 300px;
+}
+
+nav:hover ul li a .text{
+    display: block;
+}
+
+nav ul li a {
+    height: var(--height-unit);
+    gap: 10px;
+    box-shadow: 0 3px 5PX -1px  rgb(0 0 0 / 20%);
+    0 5px 8px 0 rgb(0 0 0 /14%);
+    0 1px 14px 0 rgb(0 0 0 / 12%);
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: var(--main-color-teal);
+}
+
+nav ul li a .text{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: none;
+}
+
+nav ul li a .icon{
+    width: var(--height-unit);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a .icon i {
+    font-size: 2rem;
+}
+#app {
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/******************* Z-INDEX ***************/
+header{
+    z-index: var(--z-index-header);
+}
+footer{
+    position: relative;
+    bottom: 10px;
+    z-index: var(--z-index-footer);
+}
+/****************************** HEADER **********************************/
+
+
+header{
+    box-shadow: 0 3px 5PX -1px  rgb(0 0 0 / 20%);
+    0 5px 8px 0 rgb(0 0 0 /14%);
+    0 1px 14px 0 rgb(0 0 0 / 12%);
+    position: sticky;
+    top: 0;
+    background-color:var(--main-color-white);
+}
+
+
+header ul{
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    flex: 1;
+}
+
+header ul li a{
+    display: block; 
+    height: var(--height-unit);
+    line-height: var(--height-unit);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header ul li a:hover{
+    background-color: var(--main-color-teal);
+    color: var(--main-color-white);
+}
+header .icon h1{
+    display: none;
+}
+.card{
+    box-shadow: 2px 2px 5px #cccccc, -2px -2px 5px #cccccc;
+}
+
+/******************************** MAIN *****************************************/
+
+main {
+    overflow-y: auto;
+}
+
+/******************************** MAIN *******************************************/
+
+p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* p:hover{
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: var(--main-color-white);
+    padding: 10px;
+    font-size: 1.2rem;
+} */
+
+/* img {
+    background-size: cover;
+    background-position-x: 70%;
+    height: 500px;
+} */
+
+header .icon .fa-bars {
+    font-size: 3rem;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/******************* CONTACT ******************************/
+.contact{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 60px;
+
+}
+.form-row input{
+    width: 500px;
+
+}
+.form-row  .name,
+.form-row .mail {
+    margin-top: 10px;
+    height: 40px;
+    background-color: #efefef;
+    outline: none;
+    
+}
+.second-section-us .form-row div i{
+    color: #ccc;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 40px;
+    padding-top: 20px;
+    cursor: pointer;
+    
+}
+
+.form-row .message{
+    margin-top: 10px;
+    padding-bottom: 150px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    background-color: #efefef;
+    outline: none;
+}
+.icons .firts-icon:hover{
+    color: var(--main-color-teal);
+}
+.icons .second-icon:hover{
+    color: var(--main-color-teal);
+}
+.icons .thirt-icon:hover{
+    color: var(--main-color-teal);
+}
+.icons .for-icon:hover{
+    color: var(--main-color-teal);
+}
+.icons i{
+    cursor: pointer;
+}
+.icons i{
+    /* position: absolute; */
+    position: sticky;
+    padding-top: 10px;
+    font-size: 2rem;
+}
+.icons p{
+    cursor: pointer;
+    padding-left: 50px;
+}
+/************************ ACCUEIL ********************************/
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+
+.logo{
+    display: flex;
+    position: absolute;
+    top: 100px;
+}
+.logo p{
+    font-size: 2rem;
+    color: var(--main-color-teal);
+}
+.slider img{
+    width: 100%;
+    height: 70vh;
+}
+
+/********************* PRODUCTS ****************************/
+
+.categories-products .card h5{
+    text-align: center;
+    font-weight: bold;
+}
+.categories-products .card .btn{
+    background-color: var(--main-color-teal);
+}
+
+.flex-1 h1{
+    color: var(--main-color-teal);
+}
+/**************** SERVICES **********************/
+.container .figure-caption{
+    color: var(--main-color-teal);
+    font-weight: bold;
+
+}
+.services{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.container{
+    height: 40vh;
+}
+/********************* FOOTER *******************************/
+ footer{
+    height: 100px;
+    margin-top: 20px;
+    background-color: var(--main-color-teal);
+    color: white;
+}
+ footer h6{
+    font-size: 2rem;
+    text-align: center;
+}
+ footer pre{
+    text-align: center;
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+}
+
+/************************* MEDIA **********************/
+
+@media screen and (max-width: 768px){
+    .form-row input{
+        margin-top: 10px;
+        width: 300px;
+        height: 40px;
+        
+    }
+}
+@media screen and (max-width: 540px) {
+    
+    header .icon .fa-bars {
+        font-size: 2rem;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: block;
+    }
+    header {
+        display: none;
+
+    }
+    header .icon .fa-bars:hover{
+        cursor: pointer;
+    }
+    header .icon h1{
+        display: block;
+        font-size: 2rem;
+    }
+    .contact{
+        display: block;
+    }
+    .second-section-us .form-row div i{
+        color: #ccc;
+        font-size: 1.5rem;
+        position: relative;
+        right: -200px;
+        bottom: -40px;
+        cursor: pointer;
+        display: flex;
+        
+    }
+    .form-row input{
+        margin-top: 10px;
+        width: 250px;
+        height: 40px;
+        
+    }
+    .icons p{
+        padding-left: 0px;
+    }
+    .second-section-us .form-row div i{
+        /* display: none; */
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .flex-1 h1{
+        font-size: 1.3rem;
+    }
+    header ul li a{
+        display: block; 
+        height: var(--height-unit);
+        line-height: var(--height-unit);
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+}
+
+@media screen and (max-width: 280px){
+    .form-row input{
+        margin-top: 10px;
+        width: 180px;
+        height: 20px;
+        
+    }
+    .second-section-us .form-row div i{
+        color: #ccc;
+        font-size: 1.5rem;
+        position: relative;
+        right: -140px;
+        bottom: -45px;
+        cursor: pointer;
+        display: flex;
+        
+    }
+    .contact{
+        padding-left: 10px;
+        padding-right: 10px;
+    
+    }
+    .services{
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,7 @@
+:root{
+    --main-color: #ff4500;
+    --main-color-black: hsl(0, 0%, 11%);
+    --main-color-white: #fff;
+    --main-color-teal: #1d9dae;
+    --height-unit: 80px;
+}

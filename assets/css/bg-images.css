@@ -1,0 +1,50 @@
+.bg-img1 {
+    background-image: url(/assets/images/slider/slide-1.jpg);
+    background-size: cover;
+    background-position-x: 70%;
+    height: 500px;
+}
+
+.bg-img2 {
+    background-image: url(/assets/images/slider/slide-2.svg);
+    background-size: cover;
+    background-position-x: 70%;
+    height: 500px;
+}
+
+.bg-img3 {
+    background-image: url(/assets/images/slider/slide-3.svg);
+    background-size: cover;
+    background-position-x: 70%;
+    height: 500px;
+}
+.bg-img4 {
+    background-image: url(/assets/images/slider/slide-4.svg);
+    background-size: cover;
+    background-position-x: 70%;
+    height: 500px;
+}
+.bg-img5 {
+    background-image: url(/assets/images/slider/slide-5.svg);
+    background-size: cover;
+    background-position-x: 70%;
+    height: 500px;
+}
+.bg-img6 {
+    background-image: url(/assets/images/slider/slide-6.svg);
+    background-size: cover;
+    background-position-x: 70%;
+    height: 500px;
+}
+.bg-img7 {
+    background-image: url(/assets/images/slider/slide-7.svg);
+    background-size: cover;
+    background-position-x: 70%;
+    height: 500px;
+}
+.bg-img8 {
+    background-image: url(/assets/images/slider/slide-8.svg);
+    background-size: cover;
+    background-position-x: 70%;
+    height: 500px;
+}
