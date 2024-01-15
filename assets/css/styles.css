@@ -1,4 +1,10 @@
 /********************* NAV ********************************************/
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 nav {
     background-color: var(--main-color-black);
@@ -49,16 +55,16 @@ nav ul li a .icon i {
     height: 100vh;
     overflow: hidden;
 }
+#app .flex-1 p,
+#app .flex-1 h1 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
 
 /******************* Z-INDEX ***************/
 header{
     z-index: var(--z-index-header);
-}
-footer{
-    position: relative;
-    bottom: 10px;
-    z-index: var(--z-index-footer);
 }
 /****************************** HEADER **********************************/
 
@@ -102,34 +108,17 @@ header .icon h1{
     box-shadow: 2px 2px 5px #cccccc, -2px -2px 5px #cccccc;
 }
 
-/******************************** MAIN *****************************************/
 
+/******************************** MAIN *******************************************/
 main {
     overflow-y: auto;
 }
-
-/******************************** MAIN *******************************************/
 
 p{
     font-size: 1.1rem;
     line-height: 1.6;
     text-align: justify;
 }
-
-/* p:hover{
-    font-weight: bold;
-    background-color: var(--main-color);
-    color: var(--main-color-white);
-    padding: 10px;
-    font-size: 1.2rem;
-} */
-
-/* img {
-    background-size: cover;
-    background-position-x: 70%;
-    height: 500px;
-} */
-
 header .icon .fa-bars {
     font-size: 3rem;
     position: absolute;
@@ -140,9 +129,21 @@ header .icon .fa-bars {
 /******************* CONTACT ******************************/
 .contact{
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 40px;
     margin-top: 60px;
-
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 100vh;
+}
+.first-section-us .first-section .comment{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.first-section-us .icons p{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 10px;
 }
 .form-row input{
     width: 500px;
@@ -160,9 +161,15 @@ header .icon .fa-bars {
     color: #ccc;
     font-size: 1.5rem;
     position: absolute;
-    right: 40px;
+    right: 60px;
     padding-top: 20px;
     cursor: pointer;
+    
+}
+.second-section-us .btn{
+    background-color: var(--main-color-teal);
+    color: white;
+    font-size: 1rem;
     
 }
 
@@ -190,7 +197,6 @@ header .icon .fa-bars {
     cursor: pointer;
 }
 .icons i{
-    /* position: absolute; */
     position: sticky;
     padding-top: 10px;
     font-size: 2rem;
@@ -200,27 +206,21 @@ header .icon .fa-bars {
     padding-left: 50px;
 }
 /************************ ACCUEIL ********************************/
-.logo img{
-    width: 80px;
-    height: 80px;
-}
 
-.logo{
-    display: flex;
-    position: absolute;
-    top: 100px;
-}
-.logo p{
-    font-size: 2rem;
-    color: var(--main-color-teal);
-}
 .slider img{
+    background-position-x: 68%;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
 }
 
 /********************* PRODUCTS ****************************/
+.categories-products .card  img {
+    height: 400px;
+}
+.categories-products .card {
+    width: 400px;
 
+}
 .categories-products .card h5{
     text-align: center;
     font-weight: bold;
@@ -233,28 +233,43 @@ header .icon .fa-bars {
     color: var(--main-color-teal);
 }
 /**************** SERVICES **********************/
-.container .figure-caption{
-    color: var(--main-color-teal);
-    font-weight: bold;
+.content{
+    height: 100vh;
 
 }
-.services{
-    padding-left: 10px;
-    padding-right: 10px;
+.content-nav{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 60px;
+
 }
-.container{
-    height: 40vh;
+.content-nav .figure-caption{
+    color: var(--main-color-teal);
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+
 }
+.content-nav figure img{
+    height: 200px;
+    width: 300px;
+    flex-wrap: wrap;
+}
+
+
 /********************* FOOTER *******************************/
- footer{
+ 
+footer{
     height: 100px;
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: var(--main-color-teal);
     color: white;
+    bottom: -40px;
 }
  footer h6{
     font-size: 2rem;
     text-align: center;
+    padding-top: 30px;
 }
  footer pre{
     text-align: center;
@@ -263,37 +278,99 @@ header .icon .fa-bars {
 }
 
 /************************* MEDIA **********************/
+@media screen and (max-width: 1280px) {
+    .form-row input{
+        margin-top: 10px;
+        width: 400px;
+        height: 40px;
+    }
+    .content{
+        height: 1500px;
+    
+    }
+}
+@media screen and (max-width: 912px) {
+    .form-row input{
+        margin-top: 10px;
+        width: 400px;
+        height: 40px;
+    }
+    .content{
+        height: 1700px;
+    
+    }
+}
 
 @media screen and (max-width: 768px){
     .form-row input{
         margin-top: 10px;
-        width: 300px;
+        width: 650px;
         height: 40px;
+    }
+    .contact{
+        padding-left: 10px;
+        padding-right: 20px;
+        height: 1000px;
+    
+    }
+    .content-nav .figure-caption{
+        color: var(--main-color-teal);
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-align: center;
+    
+    }
+    .content-nav {
+        display: block;
         
     }
+    
+    .categories-products {
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    footer h6{
+        font-size: 1.6rem;
+    }
+    .content-nav .figure-caption{
+        font-size: 1rem;
+    
+    }
+    .content-nav {
+        align-items: center; 
+        justify-content: center; 
+    
+    }
+    .first-section-us .first-section .comment {
+        font-size: 1.1rem;
+        line-height: 1.4;
+        text-align: justify;
+    }
+   
+    .contact{
+        display: block;
+    }
+    .content{
+        height: 1500px;
+    
+    }
+    
 }
 @media screen and (max-width: 540px) {
     
-    header .icon .fa-bars {
-        font-size: 2rem;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        display: block;
-    }
     header {
         display: none;
 
     }
-    header .icon .fa-bars:hover{
-        cursor: pointer;
-    }
+    
     header .icon h1{
         display: block;
         font-size: 2rem;
     }
     .contact{
         display: block;
+        height: 1200px;
     }
     .second-section-us .form-row div i{
         color: #ccc;
@@ -311,17 +388,12 @@ header .icon .fa-bars {
         height: 40px;
         
     }
-    .icons p{
-        padding-left: 0px;
-    }
-    .second-section-us .form-row div i{
-        /* display: none; */
-    }
     .container{
         flex-wrap: wrap;
     }
     .flex-1 h1{
-        font-size: 1.3rem;
+        font-size: 1.8rem;
+        text-align: justify;
     }
     header ul li a{
         display: block; 
@@ -330,6 +402,10 @@ header .icon .fa-bars {
         font-size: 1rem;
         font-weight: bold;
         text-transform: uppercase;
+    }
+    .content{
+        height: 3100px;
+    
     }
     
 }
@@ -340,6 +416,17 @@ header .icon .fa-bars {
         width: 180px;
         height: 20px;
         
+    }
+    .first-section-us .first-section .comment{
+        font-size: 1rem;
+        text-align: justify;
+    }
+    .first-section-us .icons .first-icon{
+        gap: 5px;
+    }
+    .first-section-us .icons p{
+        font-size: 1rem;
+        padding-left: 5px;
     }
     .second-section-us .form-row div i{
         color: #ccc;
@@ -354,9 +441,13 @@ header .icon .fa-bars {
     .contact{
         padding-left: 10px;
         padding-right: 10px;
-    
+        height: 1300px;
     }
     .services{
         flex-wrap: wrap;
+    }
+    .content{
+        height: 4200px;
+    
     }
 }
